@@ -17,7 +17,7 @@
 	}
 	
 	a:hover {
-		color: #fff;
+		color: lighten($core-accent, 20%);
 	}
 
 	.totop {
@@ -42,8 +42,8 @@
 		@extend %vertical-align;
 		margin: 0;
 		.fa {
-			color: #fff;
 			font-size: $footer-font-size * 3;
+			padding-top: 20;
 		}
 	}
 	
@@ -72,3 +72,4 @@
             margin-bottom: - $header-height - $padding-vert - 1.5rem;
         }
     }
+}

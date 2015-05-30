@@ -240,7 +240,7 @@ b, strong, label, th {
     background-size: cover;
     background-position: center; }
   #footer a:hover {
-    color: #fff; }
+    color: #8db3d3; }
   #footer .totop {
     position: absolute;
     bottom: 5rem;
@@ -259,14 +259,20 @@ b, strong, label, th {
   #footer p {
     margin: 0; }
     #footer p .fa {
-      color: #fff;
-      font-size: 2.1rem; }
+      font-size: 2.1rem;
+      padding-top: 20; }
   #footer .footercol {
     float: left;
     height: 6rem;
     width: 33.33333%; }
   #footer .footerlogo {
     margin: 5; }
+
+.footer-image.fullwidth #body {
+  padding-left: 0;
+  padding-right: 0; }
+.footer-image #body .flush-top {
+  margin-bottom: -9.5rem; }
 
 html, body, button, input, select, textarea, .pure-g, .pure-g [class*="pure-u"] {
   font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
