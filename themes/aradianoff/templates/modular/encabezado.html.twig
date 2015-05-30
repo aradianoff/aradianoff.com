@@ -1,0 +1,11 @@
+{% set header_image = page.media.images %}
+{% if header_image %}
+	<div class="flush-top encabezado-header encabezado-header-image" style="background-image: url({{ header_image.url }});">
+{% else %}
+<div>
+{% endif %}
+    {{ content }}
+</div>
+
+
+

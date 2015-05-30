@@ -1,0 +1,59 @@
+// Footer styling
+#footer {
+	position: absolute;
+	background: $footer-bg;
+	height: $footer-height;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	//@extend .padding-horiz;
+	color: $footer-text;
+	font-size: $footer-font-size;
+	text-align: center;
+	
+	&.footer-image {
+        background-size: cover;
+        background-position: center;
+	}
+	
+	a:hover {
+		color: #fff;
+	}
+
+	.totop {
+		position: absolute;
+		bottom: $footer-height - 1rem;
+		text-align: center;
+		left: 0;
+		right: 0;
+		span {
+			font-size: 1.7rem;
+			line-height: 2.5rem;
+			background: $footer-bg;
+			width: 3rem;
+			height: 2rem;
+			border-radius: $border-radius;
+			display: inline-block;
+			text-align: top;
+		}
+	}
+
+	p {
+		@extend %vertical-align;
+		margin: 0;
+		.fa {
+			color: #fff;
+			font-size: $footer-font-size * 3;
+		}
+	}
+	
+	.footercol {
+		float:left;
+		height: $footer-height;
+		width: 1/3* 100%;
+	}
+	
+	.footerlogo {
+		margin: 5;
+	}
+}
