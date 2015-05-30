@@ -1,4 +1,4 @@
-# ![](https://avatars1.githubusercontent.com/u/8237355?v=2&s=50) aRadianOff.com
+# ![](https://github.com/aradianoff/aradianoff.com/blob/master/images/logo.png?raw=true) aRadianOff.com
 
 aRadianOff.com Website's Grav User Files is a public repository of all of the user files in the site including blog posts. This site uses [Grav](http://getgrav.org/) as a CMS.
 
