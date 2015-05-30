@@ -1,0 +1,17 @@
+# Sass
+**/.sass-cache/*
+
+# Grav Specific
+data/*
+!data/.*
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
+
+# Gedit autosaves
+**/*~
+
