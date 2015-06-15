@@ -4,5 +4,6 @@ author:
   name: Ines Naya
   email: 'inesnaya@aradianoff.com'
 metadata:
-    description: 'A Radian Off: Encarando a la vida desde un ángulo diferente.'
-
+  description: 'A Radian Off: Encarando a la vida desde un ángulo diferente.'
+  keywords: data visualization, visualización de datos, data analysis, análisis de datos, open source, web development, desarrollo web, graphic design, diseño gráfico
+    
