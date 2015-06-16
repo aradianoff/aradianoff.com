@@ -77,11 +77,11 @@ b, strong, label, th {
   z-index: 10;
   width: 100%;
   height: 5rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15); }
   #header.scrolled {
     height: 3rem;
-    background-color: rgba(255, 255, 255, 0.9) !important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
     box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15) !important; }
     #header.scrolled #logo h3, #header.scrolled #logo a {
       color: #4682b4 !important;
@@ -211,20 +211,20 @@ b, strong, label, th {
 .header-image #body .flush-top {
   margin-top: -9.5rem;
   padding-top: 15rem; }
+.header-image #body .modular {
+  padding-top: 18rem; }
 .header-image #breadcrumbs {
   margin-top: 1rem; }
-.header-image #header {
-  background-color: rgba(255, 255, 255, 0.5); }
-  .header-image #header #logo h3, .header-image #header #logo a {
-    color: #444; }
-  .header-image #header a, .header-image #header .menu-btn {
-    color: #4682b4; }
-  .header-image #header a:before, .header-image #header a:after {
-    background-color: rgba(70, 130, 180, 0.7) !important; }
-  .header-image #header #navbar ul.navigation ul li a {
-    color: #4682b4; }
-    .header-image #header #navbar ul.navigation ul li a:hover {
-      color: #294d6b; }
+.header-image #header #logo h3, .header-image #header #logo a {
+  color: #444; }
+.header-image #header a, .header-image #header .menu-btn {
+  color: #4682b4; }
+.header-image #header a:before, .header-image #header a:after {
+  background-color: rgba(70, 130, 180, 0.7) !important; }
+.header-image #header #navbar ul.navigation ul li a {
+  color: #4682b4; }
+  .header-image #header #navbar ul.navigation ul li a:hover {
+    color: #294d6b; }
 
 #footer {
   position: absolute;
@@ -593,11 +593,8 @@ td {
 .blog-header {
   padding-top: 2rem;
   padding-bottom: 0; }
-  .blog-header.blog-header-image {
-    background-size: cover;
-    background-position: center; }
-    .blog-header.blog-header-image h1, .blog-header.blog-header-image h2 {
-      color: #4682b4; }
+  .blog-header.blog-header-image h1, .blog-header.blog-header-image h2 {
+    color: #4682b4; }
   .blog-header h1 {
     font-size: 4rem;
     margin-top: 0; }
@@ -752,8 +749,8 @@ ul.pagination {
   margin-top: -3rem; }
 
 .modular.header-image #header {
-  background-color: rgba(255, 255, 255, 0);
-  box-shadow: none; }
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15); }
   .modular.header-image #header #logo h3 {
     color: #4682b4; }
   .modular.header-image #header #navbar a {
@@ -790,7 +787,7 @@ ul.pagination {
       background: rgba(255, 255, 255, 0.2); }
 
 .modular .features {
-  padding: 6rem 0;
+  padding: 0 0;
   text-align: center; }
   .modular .features:after {
     content: "";

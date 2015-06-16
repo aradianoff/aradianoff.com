@@ -5,8 +5,8 @@
     &.header-image {
 
         #header {
-            background-color: rgba(255,255,255,0);
-            box-shadow: none;
+				background-color: rgba(255,255,255,0.50);
+				box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15);
 
             #logo h3 {
                 color: $header-text;

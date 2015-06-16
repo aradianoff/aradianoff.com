@@ -17,7 +17,7 @@
 	}
 	
 	a:hover {
-		color: #fff;
+		color: lighten($core-accent, 6%);
 	}
 
 	.totop {
@@ -42,8 +42,8 @@
 		@extend %vertical-align;
 		margin: 0;
 		.fa {
-			color: #fff;
 			font-size: $footer-font-size * 3;
+			padding-top: 20;
 		}
 	}
 	
@@ -56,4 +56,20 @@
 	.footerlogo {
 		margin: 5;
 	}
+}
+
+// Footer Image: Erase later if it doesn't work.
+.footer-image {
+    &.fullwidth {
+        #body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    #body {
+        .flush-top {
+            margin-bottom: - $header-height - $padding-vert - 1.5rem;
+        }
+    }
 }

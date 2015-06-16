@@ -1,7 +1,7 @@
 .blog-header {
 
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
 
     &.blog-header-image {
         background-size: cover;

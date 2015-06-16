@@ -1,6 +1,6 @@
 ---
-title: Especializados en:
-menu: Especialidades
+title: hidden
+menu: hidden
 class: big
 features:
 	- header: Análisis y visualización de datos

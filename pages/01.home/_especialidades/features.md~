@@ -1,23 +1,24 @@
 ---
-title: Especializados en:
-menu: Especialidades
+title: hidden
+menu: hidden
+body_classes: header-image fullwidth
 class: big
 features:
 	- header: Análisis y visualización de datos
 	  text: "Porque para sacar conclusiones hay que ver y estudiar lo que nos dicen los datos"
-	  icon: fighter-jet
+	  icon: eye
     - header: Desarrollo web
       text: "CMS, CSS, HTML, PHP, Twig y todas esas siglas y nombres que nos encantan"
-      icon: database
+      icon: puzzle-piece
     - header: Diseño gráfico
       text: "Liberando la creatividad que cada uno lleva dentro"
-      icon: cubes
+      icon: tint
     - header: Software OpenSource (Código Abierto)
       text: "Todo utilizando herramientas open source disponibles para todos"
-      icon: puzzle-piece
+      icon: wrench
 ---
 
-## Built on top of Greatness
-### Four core tenants keep Grav focused
+## Aprendiendo y descubriendo cada día
+### Porque en la era de la información los datos nos inundan
 
-We believe the best recipe to make something great, is to bake with [quality ingredients](#) and add dollops of [cool stuff](#). 
+Entender el mundo que nos rodea, es saber **analizarlo** y sacar tus propias **conclusiones**. 

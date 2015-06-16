@@ -7,13 +7,13 @@
 	z-index: 10;
 	width: 100%;
 	height: $header-height;
-	background-color: rgba(255,255,255,0.90);
+	background-color: rgba(255,255,255,0.50);
 	box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15);
 
 	// scroll based changes
 	&.scrolled {
 		height: $header-height - 2rem;
-		background-color: rgba(255,255,255,0.90) !important;
+		background-color: rgba(255,255,255,0.75) !important;
 		box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15) !important;
 
 		#logo h3, #logo a {
@@ -200,7 +200,10 @@
     #body {
         .flush-top {
             margin-top: - $header-height - $padding-vert - 1.5rem;
-            padding-top: $header-height + 8rem;
+            padding-top: $header-height + 10rem;
+        }
+        .modular {
+        	   padding-top: $header-height + 13rem;
         }
     }
 
@@ -209,7 +212,10 @@
     }
 
     #header {
-    		background-color: rgba(255,255,255,0.50);
+        .modular {
+        	  	background-color: rgba(255,255,255,0.50);
+				box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15);
+		  }
         #logo h3, #logo a {
             color: $core-text;
         }
