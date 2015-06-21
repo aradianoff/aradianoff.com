@@ -2,7 +2,7 @@
 title: Inicio
 icon: home
 menu: Inicio
-body_classes: "modular header-image fullwidth"
+body_classes: "modular"
 onpage_menu: false
 
 content:
@@ -11,8 +11,8 @@ content:
         by: default
         dir: asc
         custom:
-            - _encabezado
             - _especialidades
+            - _portfolio
 ---
 
 

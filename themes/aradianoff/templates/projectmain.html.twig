@@ -1,0 +1,31 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% block content %}
+
+    {% if config.plugins.breadcrumbs.enabled %}
+        {% include 'partials/breadcrumbs.html.twig' ignore missing %}
+    {% endif %}
+    
+	<h1>{{ page.title }}</h1>
+	{{ page.content }}	
+	<div id="projectgrid" class="grid-wrap">
+		 <ul class="grid effect-3" id="grid">	
+		  {% for child in collection %}
+			  {% include 'partials/project_item.html.twig' with {'page':child, 'truncate':true} %}
+			{% endfor %}
+		 </ul>	
+	 </div>
+	 	<script src="{{theme_url}}/js/loading_grids/masonry.pkgd.min.js"></script>
+		<script src="{{theme_url}}/js/loading_grids/imagesloaded.js"></script>
+		<script src="{{theme_url}}/js/loading_grids/classie.js"></script>
+		<script src="{{theme_url}}/js/loading_grids/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
+{% endblock %}

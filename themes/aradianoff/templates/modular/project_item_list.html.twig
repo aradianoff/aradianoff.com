@@ -1,0 +1,6 @@
+{% set collection = page.collection() %}
+
+<div id="infinitescrolling" class="modular">
+{{ content }}
+{% include '../partials/infinite_scrolling_items.html.twig' %}	 
+</div>

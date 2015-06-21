@@ -6,3 +6,5 @@ streams:
        '':
          - user/themes/aradianoff
          - user/themes/antimatter
+dropdown:
+  enabled: true

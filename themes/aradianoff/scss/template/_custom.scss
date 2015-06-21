@@ -11,5 +11,7 @@
 }
 
 #body > script:first-child + .grav-lightslider {
-  margin-top: -3rem;
+  margin-top: -8rem;
+  margin-left: -$padding-horiz;
+  margin-right: -$padding-horiz;
 }

@@ -1,0 +1,21 @@
+<li class="project-item">
+  <figure>
+   {% if page.header.link %}
+      <a href="{{ page.header.link }}">
+   {% else %}
+       <a href="{{ page.url }}">
+   {% endif %} 
+  
+      {% if page.media.images %}
+        <img src="{{ page.media.images|first.url }} " alt=""/>
+      {% endif %} 
+  
+      <figcaption>   
+         <div class="title-tag">{{ page.title }}</div>       
+         <p> {{ page.summary|striptags }}</p>       
+      </figcaption>
+      
+    </a>
+  </figure>
+</li>
+

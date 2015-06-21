@@ -746,7 +746,9 @@ ul.pagination {
   z-index: 1; }
 
 #body > script:first-child + .grav-lightslider {
-  margin-top: -3rem; }
+  margin-top: -8rem;
+  margin-left: -7rem;
+  margin-right: -7rem; }
 
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0.5);
@@ -787,7 +789,7 @@ ul.pagination {
       background: rgba(255, 255, 255, 0.2); }
 
 .modular .features {
-  padding: 0 0;
+  padding: 3rem 0;
   text-align: center; }
   .modular .features:after {
     content: "";
@@ -879,5 +881,226 @@ ul.pagination {
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }
+
+#projectgrid {
+  /* Grid style */
+  /* Effect 1: opacity */
+  /* Effect 2: Move Up */
+  /* Effect 3: Scale up */
+  /* Effect 4: fall perspective */
+  /* Effect 5: fly (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+  /* Effect 6: flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+  /* Effect 7: helix (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+  /* Effect 8:  */ }
+  #projectgrid .clearfix:before,
+  #projectgrid .clearfix:after {
+    content: " ";
+    display: table; }
+  #projectgrid .clearfix:after {
+    clear: both; }
+  #projectgrid .clearfix {
+    *zoom: 1; }
+  #projectgrid .project-item {
+    min-height: 300px;
+    color: #fff;
+    background: #294d6b;
+    text-align: center; }
+  #projectgrid .project-item figure {
+    margin: 0; }
+  #projectgrid .project-item figure p {
+    font-size: 0.8em;
+    margin: 0; }
+  #projectgrid .project-item figure .title-tag {
+    font-weight: bold; }
+  #projectgrid .project-item figure img {
+    display: block;
+    width: 100%; }
+  #projectgrid .grid-wrap {
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0 1em 1.875em; }
+  #projectgrid .grid figure {
+    padding: 1px;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s; }
+  #projectgrid .grid li:hover figure {
+    opacity: 0.7; }
+  #projectgrid .grid figcaption {
+    padding: 15px; }
+  #projectgrid .grid {
+    max-width: 69em;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0; }
+  #projectgrid .grid li {
+    display: block;
+    float: left;
+    margin: 1.5%;
+    width: 25%;
+    opacity: 0;
+    cursor: pointer; }
+  #projectgrid .grid li.shown,
+  #projectgrid .no-js .grid li,
+  #projectgrid .no-cssanimations .grid li {
+    opacity: 1; }
+  #projectgrid .grid li a,
+  #projectgrid .grid li img {
+    outline: none;
+    border: none;
+    color: #fff;
+    display: block;
+    max-width: 100%; }
+  #projectgrid .grid.effect-1 li.animate {
+    -webkit-animation: fadeIn 0.65s ease forwards;
+    animation: fadeIn 0.65s ease forwards; }
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  100% {
+    opacity: 1; } }
+  #projectgrid .grid.effect-2 li.animate {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    -webkit-animation: moveUp 0.65s ease forwards;
+    animation: moveUp 0.65s ease forwards; }
+@-webkit-keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+@keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+  #projectgrid .grid.effect-3 li.animate {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+    animation: scaleUp 0.65s ease-in-out forwards; }
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+  #projectgrid .grid.effect-4 {
+    -webkit-perspective: 1300px;
+    perspective: 1300px; }
+  #projectgrid .grid.effect-4 li.animate {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+    -webkit-animation: fallPerspective .8s ease-in-out forwards;
+    animation: fallPerspective .8s ease-in-out forwards; }
+@-webkit-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1; } }
+@keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1; } }
+  #projectgrid .grid.effect-5 {
+    -webkit-perspective: 1300px;
+    perspective: 1300px; }
+  #projectgrid .grid.effect-5 li.animate {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50% -300px;
+    transform-origin: 50% 50% -300px;
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-animation: fly .8s ease-in-out forwards;
+    animation: fly .8s ease-in-out forwards; }
+@-webkit-keyframes fly {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1; } }
+@keyframes fly {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1; } }
+  #projectgrid .grid.effect-6 {
+    -webkit-perspective: 1300px;
+    perspective: 1300px; }
+  #projectgrid .grid.effect-6 li.animate {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
+    -webkit-animation: flip .8s ease-in-out forwards;
+    animation: flip .8s ease-in-out forwards; }
+@-webkit-keyframes flip {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1; } }
+@keyframes flip {
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1; } }
+  #projectgrid .grid.effect-7 {
+    -webkit-perspective: 1300px;
+    perspective: 1300px; }
+  #projectgrid .grid.effect-7 li.animate {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-animation: helix .8s ease-in-out forwards;
+    animation: helix .8s ease-in-out forwards; }
+@-webkit-keyframes helix {
+  100% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1; } }
+@keyframes helix {
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1; } }
+  #projectgrid .grid.effect-8 {
+    -webkit-perspective: 1300px;
+    perspective: 1300px; }
+  #projectgrid .grid.effect-8 li.animate {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+    -webkit-animation: popUp .8s ease-in forwards;
+    animation: popUp .8s ease-in forwards; }
+@-webkit-keyframes popUp {
+  70% {
+    -webkit-transform: scale(1.1);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+@keyframes popUp {
+  70% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .8;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+  @media screen and (max-width: 900px) {
+    #projectgrid .grid li {
+      width: 50%; } }
+  @media screen and (max-width: 400px) {
+    #projectgrid .grid li {
+      width: 100%; } }
 
 /*# sourceMappingURL=template.css.map */
