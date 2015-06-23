@@ -435,6 +435,15 @@ hr {
   font-family: "Ubuntu Condensed", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   margin-right: 0.75rem; }
 
+#breadcrumbs {
+  font-size: 0.8rem; }
+
+.tinynote {
+  font-size: 0.8rem; }
+
+.visualization-page blockquote p {
+  font-size: 0.8rem; }
+
 fieldset {
   border: 1px solid #ddd; }
 
@@ -881,6 +890,16 @@ ul.pagination {
 
 .modular .modular-row:last-child {
   margin-bottom: 2rem; }
+
+#making_off {
+  float: right;
+  display: inline-block;
+  font-size: 1rem;
+  border: 1px solid #4682b4;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase; }
 
 #projectgrid {
   /* Grid style */

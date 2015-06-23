@@ -1,3 +1,18 @@
+// Making_Off custom config
+	
+#making_off {
+ 	float: right;
+ 	display: inline-block;
+   font-size: $core-font-size;
+   border: 1px solid $core-accent;
+   border-radius: $border-radius;
+   padding: 0.1rem 0.4rem;
+   margin-bottom: 0.2rem;
+   text-transform: uppercase;
+ }
+	
+
+
 // Project Style Configuration
 
 #projectgrid {
@@ -55,7 +70,6 @@
 	padding: 15px;
 }
 
-	
 	
 	//----------------------------------------------
 		

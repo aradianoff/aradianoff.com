@@ -1,18 +1,22 @@
 ---
 title: Mapa básico de parroquias en formato topojson
 slug: mapa-parroquias-topojson
-visible: false
+date: 22-06-2015
+making_off: mapa-basico-topojson
+class: visualization-page
+visualization:
+    topojson: true
 taxonomy:
     category: [visualization]
     project: [Bergondo@bierto]
     tags: [mapas, topojson, D3, datospublicos, visualizacion]
 ---
 
-Empezamos con algo muy básico. ¿Cómo ponemos generar nosotros mismos un mapa del concello simple con sus distintas parroquias? 
+Nuestro primer mapa. Bergondo y sus parroquias. 
 
 ===
 
-La [Diputación de A Coruña](http://dicoruna.es/), mediante su portal [webEIEL](http://webeiel.dicoruna.es/) tiene disponibles mapas de los distintos municipios de la provincia en formato [SHAPE](https://es.wikipedia.org/wiki/Shapefile) y [GML](https://es.wikipedia.org/wiki/Geography_Markup_Language) que nos podemos descargar y utilizar. En este ejemplo, se utilizaron los polígonos de las parroquias, convirtiéndolos a formato [TOPOJSON](https://en.wikipedia.org/wiki/GeoJSON#TopoJSON) y se dibujaron utilizando la librería [D3.js](d3js.org). Aquí tenéis el [¿CómoSeHizo?]()
+>>>>>> Fuente: Capa original de polígonos de las parroquias en formato [SHAPE](https://es.wikipedia.org/wiki/Shapefile) de [webEIEL](http://webeiel.dicoruna.es/) / [Diputación de A Coruña](http://dicoruna.es/), convertidos a formato [TOPOJSON](https://en.wikipedia.org/wiki/GeoJSON#TopoJSON) y dibujados utilizando la librería [D3.js](d3js.org).
 
 
 
@@ -34,7 +38,7 @@ var color = d3.scale.threshold()
     .domain([ 1, 2, 3, 4, 5, 6, 7, 8])
     .range(["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6" ,"#ffffcc","#e5d8bd","#fddaec","#f2f2f2"]);
 
-var svg = d3.select("#body").append("svg")
+var svg = d3.select("#visualization").append("svg")
     .attr("width", width)
     .attr("height", height);
 

@@ -37,6 +37,10 @@ $feature-bg:					#fff;
 $main-bg:						#f7f7f7;
 $body-border:					darken($main-bg, 5%);
 
+//Notes
+$notes-text:					darken($light-gray, 20%);
+$notes-bg:						$showcase-bg:
+
 // Sidebar
 $sidebar-text:					#aaa;
 
@@ -45,7 +49,7 @@ $bottom-bg:						#f7f7f7;
 $bottom-text:					$core-text;
 
 // Footer
-$footer-bg:						darken($core-accent, 25%);
+$footer-bg:						rgba(255,255,255,0.90);
 $footer-text:					#999;
 
 $rule-color: 					#F0F2F4;

@@ -11,3 +11,6 @@ $font-weight-light:300;
 // Global Paddings
 $padding-horiz: 7rem;
 $padding-vert: 3rem;
+
+// Font sizes:
+$footer-font-size: 0.7rem;

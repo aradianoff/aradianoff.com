@@ -1,7 +1,12 @@
 {% extends 'partials/base.html.twig' %}
-
-{% do assets.addJs('theme://js/d3.min.js') %}
-{% do assets.addJs('theme://js/topojson.min.js') %}
+    {% if page.header.visualization.d3js == true or page.header.visualization.d3js == null %}	 
+    	{% if site.visualization.d3js == true %}
+			{% do assets.addJs('theme://js/d3.min.js') %}
+    	{% endif %}
+    {% endif %}
+    {% if site.visualization.topojson == true or page.header.visualization.topojson == true %}
+		{% do assets.addJs('theme://js/topojson.min.js') %}
+    {% endif %}
 
 {% block content %}
 
@@ -10,7 +15,12 @@
     {% endif %}
     
    <h1>{{ page.title }}</h1>
+    {% if page.header.making_off != null %}
+        <div id="making_off"><a href="{{base_url}}/blog/{{page.header.making_off}}">¿Cómo Se Hizo?</a></div>
+    {% endif %}   
 	{{ page.content }}
+	<div id="visualization">  
+	</div>
 {% endblock %}
 
 
