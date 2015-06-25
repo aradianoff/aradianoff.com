@@ -42,9 +42,11 @@
 {% endblock %}
 
 {% block showcase %}
- <div id="fullscreen-slider">
+{% if page.home() %}
+ <div id="fullscreen-slider" class="main-slider">
         {% include 'modular/lightslider.html.twig' with {'page': page.find('/slider', true)} %}
  </div>
+{% endif %}
 {% endblock %}
 
 {% block content %}
