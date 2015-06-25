@@ -41,8 +41,13 @@
     {% endif %}
 {% endblock %}
 
+{% block showcase %}
+ <div id="fullscreen-slider">
+        {% include 'modular/lightslider.html.twig' with {'page': page.find('/slider', true)} %}
+ </div>
+{% endblock %}
+
 {% block content %}
-    {% include 'modular/lightslider.html.twig' with {'page': page.find('/slider', true)} %}
     {{ page.content }}
     {% for module in page.collection() %}
         <div id="{{ _self.pageLinkName(module.menu) }}"></div>

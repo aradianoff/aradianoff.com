@@ -757,9 +757,7 @@ ul.pagination {
   z-index: 1; }
 
 #body > script:first-child + .grav-lightslider {
-  margin-top: -2.5rem;
-  margin-left: -7rem;
-  margin-right: -7rem; }
+  margin-top: -2.5rem; }
 
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0.5);
