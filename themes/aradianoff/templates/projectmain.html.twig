@@ -8,7 +8,12 @@
         {% include 'partials/breadcrumbs.html.twig' ignore missing %}
     {% endif %}
     
-	<h1>{{ page.title }}</h1>
+   {% if page.media['logo.svg'] != null  %} 
+		<h1>{{ page.media['logo.svg'].html('', page.title, 'project-logo') }}</h1>
+	{% else %}
+		<h1>{{ page.title }}</h1>
+	{% endif %}
+	
 	{{ page.content }}	
 	<div id="projectgrid" class="grid-wrap">
 		 <ul class="grid effect-3" id="grid">	

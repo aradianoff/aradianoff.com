@@ -16,7 +16,7 @@ Este método crea una página específica por visualización. Se basa en crear u
 
 #####Requisitos previos:
 1. Tener instalado [GRAV](http://getgrav.org)
-1. Tener un tema propio ([aquí las instrucciones](http://learn.getgrav.org/themes/theme-tutorial))
+1. Tener un tema propio ([aquí las instrucciones](http://learn.getgrav.org/themes/theme-tutorial) y [aquí](http://learn.getgrav.org/themes/customization#theme-inheritance) )
 1. Tener instalado y activado el [plugin Assets](https://github.com/getgrav/grav-plugin-assets) o el [plugin Shortcodes](https://github.com/Sommerregen/grav-plugin-shortcodes). Utilizan etiquetas distintas pero ambos se utilizan para llamar a scripts de `JS` y sirven para cargar el código para generar las visualizaciones. Este ejemplo utiliza el plugin Assets.
 
 #####Pasos a seguir:

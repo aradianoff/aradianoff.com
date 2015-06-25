@@ -7,34 +7,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="1052.3622"
-   height="744.09448"
-   id="svg2"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Bergondoabierto_logo.svg">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="776"
-     id="namedview416"
-     showgrid="false"
-     inkscape:zoom="0.79520559"
-     inkscape:cx="536.5835"
-     inkscape:cy="383.84504"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+   width="746.7876"
+   height="214.94888"
+   id="svg2">
   <defs
      id="defs4">
     <marker
@@ -75,12 +51,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-308.2677)"
+     transform="translate(-177.11371,-561.04271)"
      id="layer1">
     <g
        transform="translate(1301.2234,359.2112)"
