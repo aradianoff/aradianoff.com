@@ -39,7 +39,8 @@ $body-border:					darken($main-bg, 5%);
 
 //Notes
 $notes-text:					darken($light-gray, 20%);
-$notes-bg:						$showcase-bg:
+$notes-bg:						$showcase-bg;
+$notes-border:					$core-accent;
 
 // Sidebar
 $sidebar-text:					#aaa;

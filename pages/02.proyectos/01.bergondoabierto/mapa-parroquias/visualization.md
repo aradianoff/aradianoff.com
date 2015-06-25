@@ -19,15 +19,14 @@ Nuestro primer mapa. Bergondo y sus parroquias.
 >>>>>> Fuente: Capa original de polígonos de las parroquias en formato [SHAPE](https://es.wikipedia.org/wiki/Shapefile) de [webEIEL](http://webeiel.dicoruna.es/) / [Diputación de A Coruña](http://dicoruna.es/), convertidos a formato [TOPOJSON](https://en.wikipedia.org/wiki/GeoJSON#TopoJSON) y dibujados utilizando la librería [D3.js](d3js.org).
 
 
-
-{assets:inline_css}
-.parroquia_pol-label {
+{{% assets type="css" inline=true priority=10 load="defer" pipeline=false %}}
+    .parroquia_pol-label {
 	font-size: 0.70rem;
 	  fill-opacity: .8;
 }
-{/assets}
+{{% end %}}
 
-{assets:inline_js}
+{{% assets type="js" inline=true priority=10 load="defer" pipeline=false %}}
 
 jQuery(document).ready( function() {
 
@@ -76,7 +75,8 @@ svg.selectAll(".parroquia_pol-label")
 });   
 
 });
-{/assets}
+
+{{% end %}}
 
 
 

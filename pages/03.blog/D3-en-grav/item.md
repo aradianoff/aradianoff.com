@@ -2,6 +2,8 @@
 title: Utilizando la librería D3 dentro de GRAV
 slug: d3-en-grav
 date: 10:00 23-06-2015
+assets:
+  enabled: false
 taxonomy:
     category: [tecnico, web, blog]
     tag: [D3, Grav, D3.js, tutorial]
@@ -12,12 +14,12 @@ En está guía vamos a ver un método para poder utilizar dentro de [Grav](http:
 
 Este método crea una página específica por visualización. Se basa en crear una plantilla específica para las visualizaciones que incluya las librerías de D3.js si están activadas (por defecto D3.js se carga y toposjon.js no) y añadir un bloque `div` llamado `visualization` donde agregar todos los objetos que generemos en la visualización.
 
-Requisitos previos:
+#####Requisitos previos:
 1. Tener instalado [GRAV](http://getgrav.org)
 1. Tener un tema propio ([aquí las instrucciones](http://learn.getgrav.org/themes/theme-tutorial))
-1. Tener instalado y activado el [plugin Assets](https://github.com/getgrav/grav-plugin-assets)
+1. Tener instalado y activado el [plugin Assets](https://github.com/getgrav/grav-plugin-assets) o el [plugin Shortcodes](https://github.com/Sommerregen/grav-plugin-shortcodes). Utilizan etiquetas distintas pero ambos se utilizan para llamar a scripts de `JS`y sirven para cargar el código para generar las visualizaciones. Este ejemplo utiliza el plugin Assets.
 
-Pasos a seguir:
+#####Pasos a seguir:
 
 1. **Bajarse las librerías** [D3.js](http://d3js.org) y en este caso también [Toposjon](https://github.com/mbostock/topojson/wiki/API-Reference#client-api) para poder crear mapas (mejor si ya están minimizadas: `d3.min.js` y `topojson.min.js`) y guardarlas en la carpeta `js` de nuestro tema.
 2. Añadir a `user/config/site.yaml` las siguientes líneas:
@@ -86,6 +88,8 @@ window.nombreFuncion = function() {}
  }
  ```
 Y con esto creo que ya está todo lo básico que necesitaréis para incluir vuestras visualizaciones con `D3.js` en las páginas de GRAV. 
+
+>>>> **Cuidado:** Si tenéis habilitado el cache de GRAV, veréis que vuestras visualizaciones dejarán de funcionar en cuanto actualiceis la página. Esto es porque el caché por defecto que trae GRAV sólo cachea parte de la página y los plugins de Assets o Shortcodes dejan de funcionar apropiadamente. Para arreglarlo, podéis desactivar el cache en vuestro sistema de desarrollo y utilizar el plugin [Advanced Page Cache](https://github.com/getgrav/grav-plugin-advanced-pagecache) con vuestros sistemas de producción (vuestra web ya terminada). 
 
 
 

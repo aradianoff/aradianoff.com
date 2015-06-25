@@ -9,21 +9,21 @@ taxonomy:
     tags: [población, padrón, pirámide poblacional, Bergondo, D3, datospublicos, visualizacion]
 ---
 
-Pirámide poblacional interactiva por edad y por sexo. 
+Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo. 
 
 ===
 
 >>>>> Seleccione el año de interés en el menú de abajo del gráfico o pulse PLAY para reproducir toda la serie (también puede utilizar las fechas de dirección del teclado para navegar entre años). Ponga el cursor encima de las barras para ver el dato contreto por edad. 
 
->>>>>> Fuente: Datos del padrón continuo obtenidos del <a href="http://ine.es">Instituto Nacional de Estadística</a> // Código obtenido y modificado a partir de <a href="http://vis.stanford.edu/jheer/d3/pyramid/shift.html">vis.stanford.edu</a>.
+>>>>>> Fuente: Datos del padrón continuo para el municipio de Bergondo obtenidos del <a href="http://ine.es">Instituto Nacional de Estadística</a> // Código obtenido y modificado a partir de <a href="http://vis.stanford.edu/jheer/d3/pyramid/shift.html">vis.stanford.edu</a>.
 
  
-{assets:js}
-proyectos/bergondoabierto/cuantos-somos/vis.standford.edu.d3.min.js
-proyectos/bergondoabierto/cuantos-somos/censo_2003_2014_edad_anual.js
-{/assets} 
+{{% assets type="js" inline=false priority=10 load="defer" pipeline=false %}}
+	vis.standford.edu.d3.min.js
+	censo_2003_2014_edad_anual.js
+{{% end %}} 
 
-{assets:inline_css}
+{{% assets type="css" inline=true priority=10 load="defer" pipeline=false %}}
 
 #visualization .label {
   position: relative;
@@ -99,10 +99,9 @@ proyectos/bergondoabierto/cuantos-somos/censo_2003_2014_edad_anual.js
   padding-top: 50px;
   shape-rendering: crispEdges;
 }
+{{% end %}}
 
-{/assets}
-
-{assets:inline_js}
+{{% assets type="js" inline=true priority=10 load="defer" pipeline=false %}}
 
 jQuery(document).ready( function() {
 
@@ -462,7 +461,7 @@ div.selectAll("#visualization.span.link")
     .text(function(d) { return d.toFixed(0); });  
 
 });
-{/assets}
+{{% end %}}
 
 
 

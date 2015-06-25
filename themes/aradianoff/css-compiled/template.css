@@ -78,7 +78,7 @@ b, strong, label, th {
   width: 100%;
   height: 5rem;
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.25); }
   #header.scrolled {
     height: 3rem;
     background-color: rgba(255, 255, 255, 0.75) !important;
@@ -228,14 +228,15 @@ b, strong, label, th {
 
 #footer {
   position: absolute;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   height: 6rem;
   right: 0;
   bottom: 0;
   left: 0;
   color: #999;
   font-size: 0.7rem;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 0.05rem 2rem rgba(0, 0, 0, 0.25); }
   #footer.footer-image {
     background-size: cover;
     background-position: center; }
@@ -250,12 +251,13 @@ b, strong, label, th {
     #footer .totop span {
       font-size: 1.7rem;
       line-height: 2.5rem;
-      background: rgba(255, 255, 255, 0.9);
+      background: white;
       width: 3rem;
       height: 2rem;
       border-radius: 3px;
       display: inline-block;
-      text-align: top; }
+      text-align: top;
+      box-shadow: 0 -0.5rem 0.5rem rgba(0, 0, 0, 0.15); }
   #footer p {
     margin: 0; }
     #footer p .fa {
@@ -755,7 +757,7 @@ ul.pagination {
   z-index: 1; }
 
 #body > script:first-child + .grav-lightslider {
-  margin-top: -8rem;
+  margin-top: -2.5rem;
   margin-left: -7rem;
   margin-right: -7rem; }
 
