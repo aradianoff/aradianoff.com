@@ -17,7 +17,7 @@ Este método crea una página específica por visualización. Se basa en crear u
 #####Requisitos previos:
 1. Tener instalado [GRAV](http://getgrav.org)
 1. Tener un tema propio ([aquí las instrucciones](http://learn.getgrav.org/themes/theme-tutorial))
-1. Tener instalado y activado el [plugin Assets](https://github.com/getgrav/grav-plugin-assets) o el [plugin Shortcodes](https://github.com/Sommerregen/grav-plugin-shortcodes). Utilizan etiquetas distintas pero ambos se utilizan para llamar a scripts de `JS`y sirven para cargar el código para generar las visualizaciones. Este ejemplo utiliza el plugin Assets.
+1. Tener instalado y activado el [plugin Assets](https://github.com/getgrav/grav-plugin-assets) o el [plugin Shortcodes](https://github.com/Sommerregen/grav-plugin-shortcodes). Utilizan etiquetas distintas pero ambos se utilizan para llamar a scripts de `JS` y sirven para cargar el código para generar las visualizaciones. Este ejemplo utiliza el plugin Assets.
 
 #####Pasos a seguir:
 
@@ -55,7 +55,7 @@ visualization:
 visualization:
         topojson: true
 ```
-El código `js` con el que creamos la visualización tenemos meterlo dentro de las etiquetas `assets:inline_js}` y `/assets}`para que lo procese el **plugin Assets**. Además, hay que incluirlo también dentro de una llamada a `jQuery(document).ready( function() {}` para asegurarse que el DOM esté cargado antes de ejecutar el script y que así funcione. Nos quedaría algo así como:
+El código `js` con el que creamos la visualización tenemos meterlo dentro de las etiquetas `{assets:inline_js}` y `{/assets}`para que lo procese el **plugin Assets**. Además, hay que incluirlo también dentro de una llamada a `jQuery(document).ready( function() {}` para asegurarse que el DOM esté cargado antes de ejecutar el script y que así funcione. Nos quedaría algo así como:
 ```markup
 ---
 title: Ejemplo de visualizacion con toposjon activado
