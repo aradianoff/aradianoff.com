@@ -47,6 +47,12 @@ b, strong {
 	padding-bottom: $footer-height + $padding-vert + 2rem;
 }
 
+// 
+
+.modular section#body {
+	padding-top: 1rem;
+}
+
 // Alignment
 .left {
   float: left;

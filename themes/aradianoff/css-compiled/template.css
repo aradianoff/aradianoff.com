@@ -45,6 +45,9 @@ b, strong, label, th {
   padding-top: 8rem;
   padding-bottom: 11rem; }
 
+.modular section#body {
+  padding-top: 1rem; }
+
 .left {
   float: left; }
 
@@ -798,7 +801,7 @@ ul.pagination {
       background: rgba(255, 255, 255, 0.2); }
 
 .modular .features {
-  padding: 3rem 0;
+  padding: -3rem 0;
   text-align: center; }
   .modular .features:after {
     content: "";
