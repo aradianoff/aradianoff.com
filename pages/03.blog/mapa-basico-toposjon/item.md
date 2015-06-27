@@ -29,6 +29,83 @@ Donde `-s_srs EPSG:32629` indica el formato de entrada (UTM Z29N) y `-t_srs EPSG
 
 ##### Creando el mapa:
 
+Primero insertamos JavaScript de dentro de línea (inline) y le añadimos al código una llamada que compruebe que el documento está cargado antes de ejecutar el script:
+
+```
+{assets:inline_js}
+
+jQuery(document).ready( function() {
+
+//Aquí nuestro código para hacer el gráfico
+
+};
+{/assets}
+
+```
+Y después ya podemos escribir el código para realizar el mapa. Podemos añadir las dimensiones de nuestro mapa renderizado y hacer un svg con ellas:
+```
+var width = 500,
+    height = 500;
+    
+var svg = d3.select("#visualization").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+```
+Cargar los datos de nuestro archivo topoJSON, centrarlo y escalarlo apropiadamente y crear la proyección:
+```
+d3.json("mapa-parroquias-topojson/bergondo2.json", function(error, bergondo) {
+  if (error) return console.error(error);
+
+var parroquias = topojson.feature(bergondo, bergondo.objects.parroquia_pol);
+var projection = d3.geo.mercator()
+    .center([-8.24,43.31]) /* Centrar las coordenadas a nuestra zona*/
+    .scale(250000) /* Escalar de forma apropiada */
+ 	 .translate([width / 2, height / 2]); /* Centrar el mapa en nuestro svg */
+
+var path = d3.geo.path() /* Añadir proyección */
+    .projection(projection);
+```
+Y añadir al mapa los polígonos de las parroquias, a los que además les daremos distintos colores y pondremos etiquetas con el nombre para distinguirlos:
+```
+/* Crear paleta de colores */
+var color = d3.scale.threshold()
+    .domain([ 1, 2, 3, 4, 5, 6, 7, 8])
+    .range(["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6" ,"#ffffcc","#e5d8bd","#fddaec","#f2f2f2"]);
+/* Crear polígonos de las parroquias */  
+svg.selectAll(".parroquia_pol")
+    .data(topojson.feature(bergondo, bergondo.objects.parroquia_pol).features)
+  .enter().append("path")
+    .attr("class", function(d) { return "parroquia_pol " + d.id; })
+    .attr("d", path)
+    .style("fill", function(d) { return color(d.id-698)})
+    .style("stroke", "#aaa");
+    
+/* Crear etiquetas de parroquias */    
+svg.selectAll(".parroquia_pol-label")
+    .data(topojson.feature(bergondo, bergondo.objects.parroquia_pol).features)
+  .enter().append("text")
+    .attr("class", function(d) { return "parroquia_pol-label " + d.id; })
+    .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+    .attr("dx", "-2em")
+    .text(function(d) { return d.properties.nombre; });
+    	   
+});  /* Cerrar llamada a d3.json  */
+
+
+```
+
+Y por último le añadimos estilos a las etiquetas de las parroquias para que se vean mejor, haciendo el tamaño de letra más pequeño y algo transparente:
+```
+{assets:inline_css}
+.parroquia_pol-label {
+	font-size: 0.70rem;
+	  fill-opacity: .8;
+}
+{/assets}
+```
+
+Así, el código final nos queda:
+
 ```
 {assets:inline_css}
 .parroquia_pol-label {
