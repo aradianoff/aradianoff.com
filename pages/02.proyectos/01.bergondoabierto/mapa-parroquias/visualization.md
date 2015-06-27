@@ -30,8 +30,14 @@ Nuestro primer mapa. Bergondo y sus parroquias.
 
 jQuery(document).ready( function() {
 
-var width = 500,
-    height = 500;
+// Scale graph for different devices
+var scalefactor;
+    if (jQuery(document).width() >= 500) {scalefactor = 1}  
+    else    {scalefactor = jQuery(document).width()/500};
+	
+ 
+var width = 500 * scalefactor,
+    height = 500 * scalefactor;
     
 var color = d3.scale.threshold()
     .domain([ 1, 2, 3, 4, 5, 6, 7, 8])
@@ -47,7 +53,7 @@ d3.json("mapa-parroquias-topojson/bergondo2.json", function(error, bergondo) {
 var parroquias = topojson.feature(bergondo, bergondo.objects.parroquia_pol);
 var projection = d3.geo.mercator()
     .center([-8.24,43.31]) /* Centrar las coordenadas a nuestra zona*/
-    .scale(250000) /*Escalar de forma apropiada*/
+    .scale(250000* scalefactor) /*Escalar de forma apropiada*/
  	 .translate([width / 2, height / 2]);
  	 
 var path = d3.geo.path()

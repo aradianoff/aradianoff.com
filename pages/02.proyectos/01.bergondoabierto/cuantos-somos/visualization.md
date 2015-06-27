@@ -28,42 +28,30 @@ Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo
 #visualization .label {
   position: relative;
   float: left;
-  top: 50px;
-  left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 48px;
   font-weight: bold;
-  color: #dedede;
   background: none;
   
 }
 #visualization .flabel, .mlabel {
   position: relative;
-  float: left;
-  top: 270px;
   font-size: 36px;
   font-weight: bold;
   text-align: center;
 }
 
-#visualization .flabel {
-  left: -300px;
-  color: #fdd7e4;
-  }
-  
-#visualization .mlabel {
-  left: 200px;
-  color: #B7CEEC;
-  }
-
 #visualization .break {
   border-bottom: solid 1px #dedede;
   margin: 10px 15px 2px 15px;
-  width: 800;
+  width: 100%;
 }
 #visualization .years,#visualization .controls {
-  padding-top: 10px;
-  padding-left: 15;
-  width: 800;
+  display: block;
+  margin: 15px;
+  width: 100%;
+  min-width: 400px;
   text-align: center;
   font-size: 12px;
 }
@@ -71,6 +59,14 @@ Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo
   padding-left: 10px;
   padding-right: 10px;
 }
+#visualization div.years {
+	min-height: 20px;
+}
+
+#visualization .years span {
+	float:left;
+}
+
 #visualization .years .title {
   font-size: 13px;
   font-variant: small-caps;
@@ -84,9 +80,7 @@ Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo
   color: #000;
   text-decoration: underline;
 }
-#visualization .years a.y1890 {
-  color: #bbb;
-}
+
 #visualization .years a.active {
   color: #000;
 }
@@ -96,7 +90,6 @@ Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo
   text-decoration: none;
 }
 #visualization svg {
-  padding-top: 50px;
   shape-rendering: crispEdges;
 }
 {{% end %}}
@@ -139,8 +132,8 @@ window.goto = function(yr, dur) {
 	year = yr;
 	
 	label.text(year + ": " + ttotals[year-2003].people + " personas");
-   flabel.html("mujeres <br/>" + ftotals[year-2003].people.toFixed(0));
-	mlabel.html("hombres <br/>" +mtotals[year-2003].people);
+   flabel.text("mujeres " + ftotals[year-2003].people.toFixed(0));
+	mlabel.text("hombres " + mtotals[year-2003].people);
 	
 	div.selectAll("#visualization.span.link a")
 	   .attr("class", linkClass);
@@ -241,8 +234,10 @@ window.play = function(rev) {
 	timer = setInterval(advance, 850);
 }
 
-console.log(census);
-
+var scalefactor;
+    if (jQuery(document).width() >= 1050) {scalefactor = 1}  
+    else    {scalefactor = jQuery(document).width()/1050};
+            
 var data = census;
 
 
@@ -261,28 +256,14 @@ var w = 500,
     x2 = d3.scale.linear().domain([0, maxp]).range([w, 0]),
     rf = "javascript:return false;";
 
-var label = d3.select("#visualization")
-  .append("div")
-    .attr("class", "label")
-    .text(year.toFixed(0) + ": " + ttotals[year-2003].people + " personas");
-    
-var flabel = d3.select("#visualization")
-  .append("div")
-    .attr("class", "flabel")
-    .html("mujeres <br/>" + ftotals[year-2003].people.toFixed(0));
-
-var mlabel = d3.select("#visualization")
-  .append("div")
-    .attr("class", "mlabel")
-    .html("hombres <br/>" + mtotals[year-2003].people.toFixed(0));
-
-
 var vis = d3.select("#visualization")
   .append("svg:svg")
-    .attr("width", 2*w + 40)
-    .attr("height", h + 40)
+  	 .attr("class", "drawing")
+    .attr("width", (2*w + 50)* scalefactor)
+    .attr("height", (h + 100)* scalefactor)
   .append("svg:g")
-    .attr("transform", "translate(20,15)");
+    .attr("transform", "translate(0,"+60*scalefactor+") scale("+ scalefactor+")")
+    .attr("class", "main-g") 
 
 // pyramid bar chart
 
@@ -422,6 +403,33 @@ rules2.append("svg:text")
     .attr("font-size", "12px")
     .attr("fill", "#bbb")
     .text(function(d) { return (d).toFixed(0); });
+    
+// Main label
+var label = vis.append("svg:g")
+  .attr("class", "label")
+  .append("svg:text")
+    .attr("y", -15)
+    .attr("fill", "#dedede")
+    .text(year.toFixed(0) + ": " + ttotals[year-2003].people + " personas");
+  
+// Female and Male Labels
+    
+var flabel = vis.append("svg:g")
+   .attr("class", "flabel")
+   .append("svg:text")
+    .attr("y", h/2)
+    .attr("fill", "#fdd7e4")
+    .text("mujeres " + ftotals[year-2003].people.toFixed(0));
+    
+var mlabel = vis.append("svg:g")
+   .attr("class", "mlabel")
+   .append("svg:text")
+    .attr("y", h/2)
+    .attr("x", 3*w/2)
+    .attr("fill", "#b7ceec")
+    .text("hombres " + mtotals[year-2003].people.toFixed(0));
+    
+// Controls
 
 d3.select("#visualization")
   .append("div")
@@ -457,7 +465,7 @@ div.selectAll("#visualization.span.link")
     .attr("class", "link")
   .append("a")
     .attr("class", linkClass)
-    .attr("href", function(d) { return d==1890?null:"javascript:goto("+d+");"; })
+    .attr("href", function(d) { return "javascript:goto("+d+");"})
     .text(function(d) { return d.toFixed(0); });  
 
 });

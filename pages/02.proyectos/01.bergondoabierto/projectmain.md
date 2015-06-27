@@ -16,4 +16,4 @@ content:
 
 ===
 
-Bergondo@bierto nacio de la inquietud por conocer el nivel de disponibilidad de datos con los que cuentan los cuidadanos bergondeses acerca de su municipio. En una sociedad en la que cada día se le da más importancia y 'bombo' a la **transparencia** y a la necesidad que que los **datos sean públicos**. ¿Qué datos tenemos disponibles sobre nuestro concello y qué nos dicen? Aquí los iremos explorando con ejemplos y visualizaciones.
+Bergondo@bierto nació de la inquietud por conocer el nivel de disponibilidad de datos con los que cuentan los cuidadanos bergondeses acerca de su municipio. En una sociedad en la que cada día se le da más importancia y 'bombo' a la **transparencia** y a la necesidad que que los **datos sean públicos**. ¿Qué datos tenemos disponibles sobre nuestro concello y qué nos dicen? Aquí los iremos explorando con ejemplos y visualizaciones.
