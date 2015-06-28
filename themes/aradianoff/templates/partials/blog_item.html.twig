@@ -1,10 +1,14 @@
 <div class="list-item">
 
     <div class="list-blog-header">
-        <span class="list-blog-date">
-            <span>{{ page.date|date("d") }}</span>
-            <em>{{ page.date|date("M") }}</em>
-        </span>
+		<span class="list-blog-date">
+        {% set mes = ['ENE', 'FEB' , 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SET', 'OCT', 'NOV', 'DIC'] %}
+        {% set nrMeses = page.date|date("n") %}
+        {% set meses = mes[nrMeses -1] %}
+        <span>{{ page.date|date("d") }}</span>
+        <em>{{ meses }}</em>
+      </span>
+        
         {% if page.header.link %}
             <h4>
                 {% if page.header.continue_link is not sameas(false) %}
@@ -40,10 +44,10 @@
         {% endif %}
     {% elseif truncate and page.summary != page.content %}
         <p>{{ page.summary }}</p>
-        <p><a href="{{ page.url }}">Continue Reading...</a></p>
+        <p><a href="{{ page.url }}">Seguir leyendo...</a></p>
     {% elseif truncate %}
         <p>{{ page.content|truncate(550) }}</p>
-        <p><a href="{{ page.url }}">Continue Reading...</a></p>
+        <p><a href="{{ page.url }}">Seguir leyendo...</a></p>
     {% else %}
         <p>{{ page.content }}</p>
          {{ jscomments('disqus', { shortname: 'aradianoff' }) }}
@@ -55,11 +59,11 @@
 
         <p class="prev-next">
             {% if not page.isFirst %}
-                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> Next Post</a>
+                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> Siguiente entrada</a>
             {% endif %}
 
             {% if not page.isLast %}
-                <a class="button" href="{{ page.prevSibling.url }}">Previous Post <i class="fa fa-chevron-right"></i></a>
+                <a class="button" href="{{ page.prevSibling.url }}">Anterior entrada <i class="fa fa-chevron-right"></i></a>
             {% endif %}
         </p>
     {% endif %}
