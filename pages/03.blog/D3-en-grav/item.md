@@ -2,8 +2,6 @@
 title: Utilizando la librería D3 dentro de GRAV
 slug: d3-en-grav
 date: 10:00 23-06-2015
-assets:
-  enabled: false
 taxonomy:
     category: [tecnico, web, blog]
     tag: [D3, Grav, D3.js, tutorial]
