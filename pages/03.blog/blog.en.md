@@ -13,7 +13,7 @@ content:
     order:
         by: date
         dir: desc
-    limit: 5
+    limit: 10
     pagination: true
 
 feed:
@@ -23,5 +23,5 @@ feed:
 pagination: true
 
 ---
-# Cuaderno de aRadianOff 
-## Encarando la vida desde un ángulo diferente.
+# aRadianOff's Notebook 
+## Approaching life from a different angle.

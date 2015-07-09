@@ -1,7 +1,9 @@
 absolute_urls: false
 
-home:
-  alias: '/home'
+languages:
+  supported:
+    - es
+    - en
 
 pages:
   theme: aradianoff

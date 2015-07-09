@@ -116,6 +116,9 @@ b, strong, label, th {
       margin: 0;
       padding: 0;
       list-style: none; }
+      #header #navbar ul.langswitcher {
+        float: right;
+        font-family: "Ubuntu Condensed", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; }
       #header #navbar ul.navigation {
         display: inline-block;
         float: right; }
@@ -730,8 +733,7 @@ ul.pagination {
   text-align: center; }
 .simplesearch input {
   display: inline-block;
-  max-width: 30rem;
-  font-size: 2rem; }
+  max-width: 30rem; }
 .simplesearch .search-image {
   margin-top: 1rem; }
   .simplesearch .search-image img {
@@ -755,6 +757,25 @@ ul.pagination {
       margin-bottom: 1rem; } }
 .simplesearch hr {
   border-bottom: 1px solid #eee; }
+
+#navbar .simplesearch {
+  color: #4682b4;
+  border: 1px solid #4682b4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  margin-left: 1rem !important;
+  padding: 3px; }
+  #navbar .simplesearch li {
+    float: right;
+    padding: 3px;
+    width: 10%; }
+  #navbar .simplesearch input[type="text"] {
+    width: 80%;
+    border: 0;
+    box-shadow: none;
+    font-family: "Ubuntu Condensed", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    margin: 3px;
+    padding: 0; }
 
 .grav-lightslider .lSSlideOuter .lSPager.lSpg > li a {
   z-index: 1; }

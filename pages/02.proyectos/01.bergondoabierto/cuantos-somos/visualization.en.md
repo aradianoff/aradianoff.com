@@ -1,6 +1,6 @@
 ---
-title: ¿Cuántos somos?
-slug: cuantos-somos
+title: How many are we?
+slug: how-many-people
 date: 22-06-2015
 class: visualization-page
 taxonomy:
@@ -9,13 +9,13 @@ taxonomy:
     tags: [población, padrón, pirámide poblacional, Bergondo, D3, datospublicos, visualizacion]
 ---
 
-Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo. 
+Interactive Population Pyramid of the municipality of Bergondo (Galicia - Spain), by gender and age.
 
 ===
 
->>>>> Seleccione el año de interés en el menú de abajo del gráfico o pulse PLAY para reproducir toda la serie (también puede utilizar las fechas de dirección del teclado para navegar entre años). Ponga el cursor encima de las barras para ver el dato contreto por edad. 
+>>>>> Select year of interest in the menu below or click PLAY to see the whole year series (you can also use the right/left keys to navigate between years). Hover the cursor pointer over the population bars to see the number of people per age.
 
->>>>>> Fuente: Datos del padrón continuo para el municipio de Bergondo obtenidos del <a href="http://ine.es">Instituto Nacional de Estadística</a> // Código obtenido y modificado a partir de <a href="http://vis.stanford.edu/jheer/d3/pyramid/shift.html">vis.stanford.edu</a>.
+>>>>>> Sources: Data obtained from the <a href="http://ine.es">Instituto Nacional de Estadística</a> // Code obtained and modifyed from <a href="http://vis.stanford.edu/jheer/d3/pyramid/shift.html">vis.stanford.edu</a>.
 
  
 {{% assets type="js" inline=false priority=10 load="defer" pipeline=false %}}
@@ -119,9 +119,9 @@ function isYear(d) { return d.year == year; }
 function linkClass(y) { return "y"+y.toFixed(0) + (y==year?" active":""); }
 function tooltipText(d) {
     return d3.format(",")(d.people)
-        + " " + (d.sex==1?"hombres":"mujeres")
-        + " con edad " + (d.age==85?"85 o más":d.age)
-	    + " en " + d.year;
+        + " " + (d.sex==1?"men":"women")
+        + " aged " + (d.age==85?"85 or more":d.age)
+	    + " in " + d.year;
 }
 
 function barWidth(d) { return x1(d.people); }
@@ -131,9 +131,9 @@ window.goto = function(yr, dur) {
 	var old = year;
 	year = yr;
 	
-	label.text(year + ": " + ttotals[year-2003].people + " personas");
-   flabel.text("mujeres " + ftotals[year-2003].people.toFixed(0));
-	mlabel.text("hombres " + mtotals[year-2003].people);
+	label.text(year + ": " + ttotals[year-2003].people + " people");
+   flabel.text("women " + ftotals[year-2003].people.toFixed(0));
+	mlabel.text("men " + mtotals[year-2003].people);
 	
 	div.selectAll("#visualization.span.link a")
 	   .attr("class", linkClass);
@@ -205,7 +205,7 @@ var timer = undefined;
 window.stop = function() {
     clearInterval(timer);
     timer = undefined;
-    ctrls.select("a.toggle").text("Reproducir");
+    ctrls.select("a.toggle").text("Play");
 }
 window.toggle = function() {
 	if (!timer) {
@@ -218,7 +218,7 @@ window.toggle = function() {
 window.play = function(rev) {
 	rev = rev || false;
 	if (timer) { stop(); }
-	ctrls.select("a.toggle").text("Parar");
+	ctrls.select("a.toggle").text("Stop");
 	var advance = function() {
 		var y = year + (rev?-1:1);
 		if (y < 2003 || y > 2014) {
@@ -250,7 +250,7 @@ var maxp = data.reduce(function(a,b) { return Math.max(a,b.people); }, 0),
 var w = 500,
     h = 40 * 15,
     bins = d3.range(86),
-    year = 2003,
+    year = 2014,
     y = d3.scale.ordinal().domain(bins).rangeBands([0, h], 0.25),
     x1 = d3.scale.linear().domain([0, maxp]).range([0, w]),
     x2 = d3.scale.linear().domain([0, maxp]).range([w, 0]),
@@ -346,7 +346,7 @@ vis.append("svg:text")
     .attr("font-size", "13px")
     .attr("font-variant", "small-caps")
     .attr("letter-spacing", 1)
-    .text("edad");
+    .text("Age");
 
 // gridlines and labels for right pyramid
 
@@ -410,7 +410,7 @@ var label = vis.append("svg:g")
   .append("svg:text")
     .attr("y", -15)
     .attr("fill", "#dedede")
-    .text(year.toFixed(0) + ": " + ttotals[year-2003].people + " personas");
+    .text(year.toFixed(0) + ": " + ttotals[year-2003].people + " people");
   
 // Female and Male Labels
     
@@ -419,7 +419,7 @@ var flabel = vis.append("svg:g")
    .append("svg:text")
     .attr("y", h/2)
     .attr("fill", "#fdd7e4")
-    .text("mujeres " + ftotals[year-2003].people.toFixed(0));
+    .text("women " + ftotals[year-2003].people.toFixed(0));
     
 var mlabel = vis.append("svg:g")
    .attr("class", "mlabel")
@@ -427,7 +427,7 @@ var mlabel = vis.append("svg:g")
     .attr("y", h/2)
     .attr("x", 3*w/2)
     .attr("fill", "#b7ceec")
-    .text("hombres " + mtotals[year-2003].people.toFixed(0));
+    .text("men " + mtotals[year-2003].people.toFixed(0));
     
 // Controls
 
@@ -441,7 +441,7 @@ var div = d3.select("#visualization")
 
 div.append("span")
   .attr("class", "title")
-  .text("Año");
+  .text("Year");
 
 var ctrls = d3.select("#visualization")
   .append("div")
@@ -453,7 +453,7 @@ ctrls.append("span").append("a")
 ctrls.append("span").append("a")
   .attr("class", "control toggle")
   .attr("href", "javascript:toggle();")
-  .text("play");
+  .text("Play");
 ctrls.append("span").append("a")
   .attr("class", "control forward")
   .attr("href", "javascript:play();")
