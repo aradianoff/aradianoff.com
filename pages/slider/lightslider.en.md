@@ -22,8 +22,8 @@ lightslider:
 # Data Analysis & Visualization
 ## Bringing to life and giving meaning to public information
 ___
-# Free OpenSource Tools
-## Available to everyone
+# [Bergondo@bierto](/projects/bergondoabierto)
+## Using Public Data Sources to bring Bergondo's information to its citizens.
 ___
 # Exploring our creative side
 ## 

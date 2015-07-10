@@ -22,8 +22,8 @@ lightslider:
 # Análisis y visualización de Datos
 ## Dándole vida y sentido a la información pública
 ___
-# Herramientas libres de código abierto
-## Accesibles para todos
+#  [Bergondo@bierto](/es/proyectos/bergondoabierto)
+## Acercando la información pública de Bergondo a sus ciudadanos.
 ___
 # Explorando nuestro lado creativo
 ## 
