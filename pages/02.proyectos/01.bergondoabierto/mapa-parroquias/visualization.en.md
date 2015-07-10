@@ -1,6 +1,6 @@
 ---
 title: Basic Map of the subunits (parishes) of Bergondo in topojson format
-slug: map-subunits-topojson
+slug: map-subunits-bergondo
 date: 22-06-2015
 making_off: basic-map-topojson
 class: visualization-page
@@ -47,7 +47,7 @@ var svg = d3.select("#visualization").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("map-subunits-topojson/bergondo2.json", function(error, bergondo) {
+d3.json("map-subunits-bergondo/bergondo2.json", function(error, bergondo) {
   if (error) return console.error(error);
 
 var parroquias = topojson.feature(bergondo, bergondo.objects.parroquia_pol);

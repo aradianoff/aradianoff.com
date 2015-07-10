@@ -2,7 +2,12 @@
 
     <div class="list-blog-header">
 		<span class="list-blog-date">
-        {% set mes = ['ENE', 'FEB' , 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SET', 'OCT', 'NOV', 'DIC'] %}
+		{% if langswitcher.current == 'en' %}
+            {% set mes = ['JAN', 'FEB' , 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SET', 'OCT', 'NOV', 'DEC'] %}
+        {% else %}
+            {% set mes = ['ENE', 'FEB' , 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'] %}
+        {% endif %}
+        
         {% set nrMeses = page.date|date("n") %}
         {% set meses = mes[nrMeses -1] %}
         <span>{{ page.date|date("d") }}</span>
@@ -44,10 +49,10 @@
         {% endif %}
     {% elseif truncate and page.summary != page.content %}
         <p>{{ page.summary }}</p>
-        <p><a href="{{ page.url }}">Seguir leyendo...</a></p>
+        <p><a href="{{ page.url }}">{{ "AR_POST.READ_MORE"|t }}...</a></p>
     {% elseif truncate %}
         <p>{{ page.content|truncate(550) }}</p>
-        <p><a href="{{ page.url }}">Seguir leyendo...</a></p>
+        <p><a href="{{ page.url }}">{{ "AR_POST.READ_MORE"|t }}...</a></p>
     {% else %}
         <p>{{ page.content }}</p>
          {{ jscomments('disqus', { shortname: 'aradianoff' }) }}
@@ -59,11 +64,11 @@
 
         <p class="prev-next">
             {% if not page.isFirst %}
-                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> Siguiente entrada</a>
+                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> {{ "AR_PAGINATION.NEXT"|t }}</a>
             {% endif %}
 
             {% if not page.isLast %}
-                <a class="button" href="{{ page.prevSibling.url }}">Anterior entrada <i class="fa fa-chevron-right"></i></a>
+                <a class="button" href="{{ page.prevSibling.url }}">{{ "AR_PAGINATION.PREVIOUS"|t }} <i class="fa fa-chevron-right"></i></a>
             {% endif %}
         </p>
     {% endif %}

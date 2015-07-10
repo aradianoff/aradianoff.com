@@ -4,7 +4,7 @@ author:
   name: Ines Naya
   email: 'inesnaya@aradianoff.com'
 metadata:
-  description: 'A Radian Off: Encarando a la vida desde un ángulo diferente.'
+  description: 'Using opensource tools for analysis and visualization of public data. // Utilizando herramientas opensource para el análisis y visualización de datos públicos.'
   keywords: data visualization, visualización de datos, data analysis, análisis de datos, open source, web development, desarrollo web, graphic design, diseño gráfico
 taxonomies: [category,tag,project]                  # Arbitrary list of taxonomy types
 visualization:

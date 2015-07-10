@@ -1,38 +1,38 @@
 {% if config.plugins.simplesearch.enabled %}
 <div class="sidebar-content">
-    <h4>{{ AR_SEARCH.TAG|t }}</h4>
+    <h4>{{ "AR_SEARCH.TAG"|t }}</h4>
     {% include 'partials/simplesearch_searchbox.html.twig' %}
 </div>
 {% endif %}
 <div class="sidebar-content">
-	<h4>{{ AR_BLOG.NAME|t }}</h4>
-	<p>{{ AR_BLOG.DESCRIPTION|t }}</p>
+	<h4>{{ "AR_BLOG.NAME"|t }}</h4>
+	<p>{{ "AR_BLOG.DESCRIPTION"|t }}</p>
 </div>
 {% if config.plugins.relatedpages.enabled and related_pages|length > 0 %}
-    <h4>{{ AR_POST.RELATED|t }}</h4>
+    <h4>{{ "AR_POST.RELATED"|t }}</h4>
     {% include 'partials/relatedpages.html.twig' %}
 {% endif %}
 {% if config.plugins.random.enabled %}
 <div class="sidebar-content">
-	<h4>{{ AR_POST.RANDOM|t }}</h4>
-	<a class="button" href="{{ base_url_relative }}/random"><i class="fa fa-retweet"></i> {{ AR_POST.RANDOM_MSG|t }}</a>
+	<h4>{{ "AR_POST.RANDOM"|t }}</h4>
+	<a class="button" href="{{ base_url_relative }}/random"><i class="fa fa-retweet"></i> {{ "AR_POST.RANDOM_MSG"|t }}</a>
 </div>
 {% endif %}
 {% if config.plugins.taxonomylist.enabled %}
 <div class="sidebar-content">
-    <h4>{{ AR_TAGS.POPULAR|t }}</h4>
+    <h4>{{ "AR_TAGS.POPULAR"|t }}</h4>
     {% include 'partials/taxonomylist.html.twig' with {'taxonomy':'tag'} %}
 </div>
 {% endif %}
 {% if config.plugins.archives.enabled %}
 <div class="sidebar-content">
-    <h4>{{ AR_ARCHIVES | t }}</h4>
+    <h4>{{ "AR_ARCHIVES" | t }}</h4>
 	{% include 'partials/archives.html.twig' %}
 </div>
 {% endif %}
 {% if config.plugins.feed.enabled %}
 <div class="sidebar-content syndicate">
-    <h4>{{ AR_SUSCRIBE | t }}</h4>
+    <h4>{{ "AR_SUSCRIBE" | t }}</h4>
     <a class="button" href="{{ feed_url }}.atom"><i class="fa fa-rss-square"></i> Atom 1.0</a>
     <a class="button" href="{{ feed_url }}.rss"><i class="fa fa-rss-square"></i> RSS</a>
 </div>

@@ -5,6 +5,7 @@
     <ul class="archive-plus">
 {% endif %}
 
+
 {# Set month names in spanish #}
 {% set meses = ['Enero', 'Febrero' , 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'] %}
 
@@ -64,7 +65,11 @@
             {% else %}
                 <label for="input-archive-{{ year_index }}-{{ loop.index }}"></label>
             {% endif %}
-		   {% set mes = meses[month|date('n')-1] %}
+            {% if langswitcher.current == 'en' %}
+                {% set mes = month|date('F') %}
+            {% else %}
+		        {% set mes = meses[month|date('n')-1] %}
+		    {% endif %}
 		   {% set anho = month|date('Y') %}
             <a href="{{ base_url }}/archive{{ config.system.param_sep }}{{ month|date('M_Y')|lower|e('url') }}">
                 <span class="archive_month"> {{ mes }} {{anho}}</span>

@@ -1,0 +1,52 @@
+es:
+    AR_ARCHIVES: Archivos
+    AR_BLOG:
+        NAME: El Cuaderno de aRadianOff
+        DESCRIPTION: Colección de notas y artículos sobre análisis y visualización de datos, desarrollo web, diseño gráfico y herramientas de código abierto.
+    AR_FOOTER:
+        POWERED_BY: Funcionando con
+    AR_PAGINATION:
+        PREVIOUS: Anterior entrada
+        NEXT: Siguiente entrada
+    AR_POST:
+        RANDOM: Entrada aleatoria
+        RANDOM_MSG: ¡Estoy de suerte!
+        RELATED: Entradas relacionadas
+        READ_MORE: Seguir leyendo
+    AR_SEARCH:
+        RESULTS_TITLE: Resultados de la búsqueda
+        RESULTS: Búsqueda: <strong> %s </strong> encontrados %d resultado%s
+        TAG: Buscar
+    AR_SUSCRIBE: Suscríbete
+    AR_TAGS:
+        POPULAR: Etiquetas + Populares
+    AR_VISUALIZATION:
+        MAKING_OFF: ¿Cómo Se Hizo?
+
+en:
+    AR_ARCHIVES: Archives
+    AR_BLOG:
+        NAME: aRadianOff's Notebook
+        DESCRIPTION: Collection of notes and articles about data analysis and visualization, web development, graphic desigin and opensource tools. 
+    AR_FOOTER:
+        POWERED_BY: Powered by
+    AR_PAGINATION:
+        PREVIOUS: Previous post
+        NEXT: Next post
+    AR_POST:
+        RANDOM: Random Post
+        RANDOM_MSG: I'm Feeling Lucky!
+        RELATED: Related Entries
+        READ_MORE: Continue reading
+    AR_SEARCH:
+        RESULTS_TITLE: Search Results
+        RESULTS: Query: <strong> %s </strong> found %d result%s
+        TAG: Search
+    AR_SUSCRIBE: Suscribe
+    AR_TAGS:
+        POPULAR: Popular + Tags
+    AR_VISUALIZATION:
+        MAKING_OFF: Making Off
+
+
+
