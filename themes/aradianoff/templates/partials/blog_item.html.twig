@@ -2,7 +2,7 @@
 
     <div class="list-blog-header">
 		<span class="list-blog-date">
-		{% if langswitcher.current == 'en' %}
+		{% if grav.language.getActive == 'en' %}
             {% set mes = ['JAN', 'FEB' , 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SET', 'OCT', 'NOV', 'DEC'] %}
         {% else %}
             {% set mes = ['ENE', 'FEB' , 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'] %}

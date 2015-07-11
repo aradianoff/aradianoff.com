@@ -65,7 +65,7 @@
             {% else %}
                 <label for="input-archive-{{ year_index }}-{{ loop.index }}"></label>
             {% endif %}
-            {% if langswitcher.current == 'en' %}
+            {% if grav.language.getActive == 'en' %}
                 {% set mes = month|date('F') %}
             {% else %}
 		        {% set mes = meses[month|date('n')-1] %}

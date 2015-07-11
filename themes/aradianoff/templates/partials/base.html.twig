@@ -49,14 +49,13 @@
                 <div id="navbar">
                     {% block header_extra %}{% endblock %}
                     {% block header_navigation %}
-   
+                    {% include 'partials/langswitcher.html.twig' %}   
                         {% if config.plugins.simplesearch.enabled %}
                             <ul class="simplesearch navigation">
                                 <li class="fa fa-search"></li>
                                {% include 'partials/simplesearch_searchbox.html.twig' %}                                
                             </ul>
                         {% endif %}
-                    {% include 'partials/langswitcher.html.twig' %}
                     {% include 'partials/navigation.html.twig' %}
                     {% endblock %}
                     <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
