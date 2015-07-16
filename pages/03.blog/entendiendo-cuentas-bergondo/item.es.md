@@ -3,6 +3,7 @@ title: Visualizando las cuentas de un ayuntamiento (Parte II): Entendiendo las c
 slug: entendiendo-informacion-cuentas
 shortcodes: false
 date: 10:00 16-07-2015
+published: false
 taxonomy:
     category: [tecnico, web, blog]
     tag: [presupuestos, bergondo, tutorial, ingresos, gastos]
