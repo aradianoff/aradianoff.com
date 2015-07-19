@@ -1,7 +1,7 @@
 ---
 title: ¿Cuántos somos?
 slug: cuantos-somos
-date: 22-06-2015
+date: 23-06-2015
 class: visualization-page
 taxonomy:
     category: [visualization]
@@ -14,6 +14,8 @@ Pirámide poblacional del municipio de Bergondo, interactiva por edad y por sexo
 ===
 
 >>>>> Seleccione el año de interés en el menú de abajo del gráfico o pulse PLAY para reproducir toda la serie (también puede utilizar las fechas de dirección del teclado para navegar entre años). Ponga el cursor encima de las barras para ver el dato contreto por edad. 
+
+<div id="visualization"></div>
 
 >>>>>> Fuente: Datos del padrón continuo para el municipio de Bergondo obtenidos del <a href="http://ine.es">Instituto Nacional de Estadística</a> // Código obtenido y modificado a partir de <a href="http://vis.stanford.edu/jheer/d3/pyramid/shift.html">vis.stanford.edu</a>.
 

@@ -92,4 +92,6 @@ cat $input_file | sed '/^[ ]*$/d' | sed 's/^ *//g'  | sed 's/ *$//g' | tr -d '\n
 And now we have our account report in our computer, with a format that we can work with.
 
 Now it's time to organize, filter and visualize (which is not little work) the data. We will keep on doing that in the next part of our tutorial.
+
+[**Visualising the anual account records of a municipality (Part II)**](/en/blog/understanding-account-information)
  

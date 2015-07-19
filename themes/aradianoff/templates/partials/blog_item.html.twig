@@ -1,17 +1,9 @@
 <div class="list-item">
 
     <div class="list-blog-header">
-		<span class="list-blog-date">
-		{% if grav.language.getActive == 'en' %}
-            {% set mes = ['JAN', 'FEB' , 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SET', 'OCT', 'NOV', 'DEC'] %}
-        {% else %}
-            {% set mes = ['ENE', 'FEB' , 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'] %}
-        {% endif %}
-        
-        {% set nrMeses = page.date|date("n") %}
-        {% set meses = mes[nrMeses -1] %}
+		<span class="list-blog-date">      
         <span>{{ page.date|date("d") }}</span>
-        <em>{{ meses }}</em>
+        <em>{{ 'SHORT_MONTHS'|ta(page.date|date('n') - 1) }}</em>
       </span>
         
         {% if page.header.link %}

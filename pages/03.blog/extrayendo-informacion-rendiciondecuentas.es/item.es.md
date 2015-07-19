@@ -93,4 +93,6 @@ Y ya tenemos nuestra información de cuentas en nuestro ordenador, y con un form
 
 Ahora sólo queda clasificar, organizar y visualizar los datos (que no es poco). Eso lo seguiremos haciendo en la siguiente parte de este tutorial. 
 
+[**Visualizando las cuentas de un ayuntamiento (Parte II)**](/es/blog/entendiendo-cuentas-bergondo)
+
 

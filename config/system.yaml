@@ -1,6 +1,7 @@
 absolute_urls: false
 
 languages:
+  http_accept_language: true
   supported:
     - es
     - en

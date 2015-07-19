@@ -5,10 +5,6 @@
     <ul class="archive-plus">
 {% endif %}
 
-
-{# Set month names in spanish #}
-{% set meses = ['Enero', 'Febrero' , 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'] %}
-
 {# Iterate over all data #}
 {% for year,months in archive_plus.data %}
     {# Set current year #}
@@ -65,14 +61,9 @@
             {% else %}
                 <label for="input-archive-{{ year_index }}-{{ loop.index }}"></label>
             {% endif %}
-            {% if grav.language.getActive == 'en' %}
-                {% set mes = month|date('F') %}
-            {% else %}
-		        {% set mes = meses[month|date('n')-1] %}
-		    {% endif %}
 		   {% set anho = month|date('Y') %}
             <a href="{{ base_url }}/archive{{ config.system.param_sep }}{{ month|date('M_Y')|lower|e('url') }}">
-                <span class="archive_month"> {{ mes }} {{anho}}</span>
+                <span class="archive_month"> {{ 'MONTHS_OF_THE_YEAR'|ta(month|date('n')-1) }} {{anho}}</span>
             </a>
 
             <ul class="last">

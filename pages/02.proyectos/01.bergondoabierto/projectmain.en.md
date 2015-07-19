@@ -10,6 +10,7 @@ content:
     @taxonomy:
       category: visualization
       project: Bergondo@bierto
+
 ---
 
 ## Using Public Data Sources to bring Bergondo's information to its citizens. 

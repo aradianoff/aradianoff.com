@@ -1,7 +1,7 @@
 ---
 title: How many are we?
 slug: how-many-people
-date: 22-06-2015
+date: 23-06-2015
 class: visualization-page
 taxonomy:
     category: [visualization]
@@ -15,6 +15,8 @@ Interactive Population Pyramid of the municipality of Bergondo (Galicia - Spain)
 
 >>>>> Select year of interest in the menu below or click PLAY to see the whole year series (you can also use the right/left keys to navigate between years). Hover the cursor pointer over the population bars to see the number of people per age.
 
+<div id="visualization"></div>
+
 >>>>>> Sources: Data obtained from the <a href="http://ine.es">Instituto Nacional de Estadística</a> // Code obtained and modifyed from <a href="http://vis.stanford.edu/jheer/d3/pyramid/shift.html">vis.stanford.edu</a>.
 
  
@@ -23,7 +25,7 @@ Interactive Population Pyramid of the municipality of Bergondo (Galicia - Spain)
 	censo_2003_2014_edad_anual.js
 {{% end %}} 
 
-{{% assets type="css" inline=true priority=10 load="defer" pipeline=false %}}
+{{% assets type="css" inline=true priority=10 load="defer" pipeline=true %}}
 
 #visualization .label {
   position: relative;
@@ -94,7 +96,7 @@ Interactive Population Pyramid of the municipality of Bergondo (Galicia - Spain)
 }
 {{% end %}}
 
-{{% assets type="js" inline=true priority=10 load="defer" pipeline=false %}}
+{{% assets type="js" inline=true priority=10 load="defer" pipeline=true %}}
 
 jQuery(document).ready( function() {
 

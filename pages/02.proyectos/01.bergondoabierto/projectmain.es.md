@@ -10,6 +10,7 @@ content:
     @taxonomy:
       category: visualization
       project: Bergondo@bierto
+
 ---
 
 ## Utilizando fuentes de datos públicas para acercar la información referente al municipio de Bergondo a sus ciudadanos.

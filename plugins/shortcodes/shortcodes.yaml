@@ -1,6 +1,6 @@
 # Global plugin configurations
 
-enabled: true               # Set to false to disable this plugin completely
+enabled: true              # Set to false to disable this plugin completely
 
 # Default configurations for special shortcodes
 

@@ -16,6 +16,8 @@ Our first map. Bergondo and its subunits (parishes).
 
 ===
 
+<div id="visualization"></div>
+
 >>>>>> Sources: Original poligon layer of the subunits in [SHAPE](https://es.wikipedia.org/wiki/Shapefile) format from [webEIEL](http://webeiel.dicoruna.es/) / [Diputación de A Coruña](http://dicoruna.es/), converted to [TOPOJSON](https://en.wikipedia.org/wiki/GeoJSON#TopoJSON) format and drawn using the [D3.js](d3js.org) library.
 
 

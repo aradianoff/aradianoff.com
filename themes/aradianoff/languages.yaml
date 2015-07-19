@@ -22,7 +22,8 @@ es:
         POPULAR: Etiquetas + Populares
     AR_VISUALIZATION:
         MAKING_OFF: ¿Cómo Se Hizo?
-
+    MONTHS_OF_THE_YEAR: [Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+    SHORT_MONTHS: ['ENE', 'FEB' , 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC']
 en:
     AR_ARCHIVES: Archives
     AR_BLOG:
@@ -47,6 +48,5 @@ en:
         POPULAR: Popular + Tags
     AR_VISUALIZATION:
         MAKING_OFF: Making Off
-
-
-
+    MONTHS_OF_THE_YEAR: [January, February, March, April, May, June, July, August, September, October, November, December]
+    SHORT_MONTHS: ['JAN', 'FEB' , 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SET', 'OCT', 'NOV', 'DEC']
