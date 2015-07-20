@@ -13,7 +13,7 @@ Esa es la guía para instalar Apache, PHP, y montar nuestra web utilizando el ge
 
 Grav aún está en desarrollo, pero en versiones próximas incluso va a contar con un administrador en modo gráfico como a los que nos ha acostumbrado Wordpress, Drupal u otros CMS a los que estamos más acostumbrados, y con permisos de gestión y edición. Como este blog es unipersonal  (al menos de momento), con Grav se cumplen nuestras necesidades más que de sobra. 
 
-Para instalarlo, necesitamos primero instalar el [Servidor web Apache](httpd.apache.org/) en el VPS. El nuestro viene con distribución Debian 7, y es tan fácil como ejecutar el en terminal:
+Para instalarlo, necesitamos primero instalar el [Servidor web Apache](http://httpd.apache.org/) en el VPS. El nuestro viene con distribución Debian 7, y es tan fácil como ejecutar el en terminal:
 ```shell
 $ atp-get install apache2 
 

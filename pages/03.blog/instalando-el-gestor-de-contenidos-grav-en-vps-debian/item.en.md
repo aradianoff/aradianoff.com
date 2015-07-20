@@ -13,7 +13,7 @@ This guide shows how to install Apache, PHP, and set up our web using GRAV in a 
 
 Grav is still under development, but in future releases it will even have and admin user inferface like (or better ;) ) the ones in Wordpress, Drupal and other CMS, that we were used to and with management and edition permissions. As this site is made and maintained by one person only (at least right now), with Grav we have all (and more) our need covered. 
 
-To install it, we need a web server installed in our system first. We installed an [Apache Server](httpd.apache.org/) in our VPS. Because our VPS distribution is Debian 7, it is as easy as typing in a terminal:
+To install it, we need a web server installed in our system first. We installed an [Apache Server](http://httpd.apache.org/) in our VPS. Because our VPS distribution is Debian 7, it is as easy as typing in a terminal:
 ```shell
 $ atp-get install apache2 
 
