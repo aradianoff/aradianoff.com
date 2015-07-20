@@ -19,11 +19,12 @@ lightslider:
     speed: 1000
 ---
 
+#  [Bergondo@bierto](/es/proyectos/bergondoabierto)
+## Acercando la información pública de Bergondo a sus ciudadanos. 
+___
+
 # Análisis y visualización de Datos
 ## Dándole vida y sentido a la información pública
-___
-#  [Bergondo@bierto](/es/proyectos/bergondoabierto)
-## Acercando la información pública de Bergondo a sus ciudadanos.
 ___
 # Explorando nuestro lado creativo
 ## 

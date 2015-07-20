@@ -19,11 +19,12 @@ lightslider:
     speed: 1000
 ---
 
-# Data Analysis & Visualization
-## Bringing to life and giving meaning to public information
-___
 # [Bergondo@bierto](/projects/bergondoabierto)
 ## Using Public Data Sources to bring Bergondo's information to its citizens.
+___
+
+# Data Analysis & Visualization
+## Bringing to life and giving meaning to public information
 ___
 # Exploring our creative side
 ## 
