@@ -3,6 +3,7 @@ title: About aRadianOff
 icon: user
 slug: about
 menu: QuiénEs
+
 ---
 
 aRadianOff es fruto del trabajo de una única persona. Anteriormente investigadora en biología marina y especializada en gestión de pesquerías, decidió dejar el mundo académico para dedicarle el tiempo a sus hijos durante sus primeros años y para perseguir su otra pasión: **El Análisis de Datos y su Visualización**. 
