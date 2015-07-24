@@ -1,6 +1,6 @@
 ---
 title: Mapa de farolas de Bergondo
-date: 20-07-2015
+date: 29-07-2015
 making_off: visualizando-alumbrado-bergondo
 class: visualization-page
 visualization:
