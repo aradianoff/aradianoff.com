@@ -2,7 +2,7 @@
 title: Creando el mapa del alumbrado de Bergondo
 slug: visualizando-alumbrado-bergondo
 date: 10:00 30-07-2015
-published:false
+published: false
 shortcodes: false
 assets:
   enabled: false
