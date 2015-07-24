@@ -1,0 +1,3 @@
+[submodule "plugins/simple_contact"]
+	path = plugins/simple_contact
+	url = git@github.com:aradianoff/simple_contact.git
