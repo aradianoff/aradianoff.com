@@ -15,3 +15,8 @@ Thumbs.db
 # Gedit autosaves
 **/*~
 
+# Custom config files
+config/system.yaml
+config/plugins/recaptchacontact.yaml
+.gitignore
+
