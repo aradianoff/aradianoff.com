@@ -1,7 +1,38 @@
 # ![](https://github.com/aradianoff/aradianoff.com/blob/master/images/logo.png?raw=true) aRadianOff.com
 
-aRadianOff.com Website's Grav User Files is a public repository of all of the user files in the site including blog posts. This site uses [Grav](http://getgrav.org/) as a CMS and a custom child theme of the Antimatter theme grav called aRadianOff. It has multilanguage support for both Spanish and English, and visualizations can easily incorporate the d3.js library as it is already loaded for visualization pages. 
+**aRadianOff.com** Website's Grav User Files is a public repository of all of the user files in the site including blog posts. This site uses [Grav](http://getgrav.org/) as a CMS and a custom child theme of the Antimatter theme grav called aRadianOff. It has multilanguage support for both Spanish and English, and visualizations can easily incorporate the d3.js library as it is already loaded for visualization pages. 
 
+## ToDo List (List of posible improvements to be made): 
+- Instead of pagination, use infinite scrolling in Blog
+- Plugins that need multilanguage support: Feed, JSComments.
+- Resize visualizations with scaling factor. 
+
+
+##Active plugins list: 
+
+- Advanced PageCache: In production site.
+- Archive Plus 
+- Archives
+- Assets
+- Breadcrumbs
+- Error
+- Feed
+- Highligh
+- JSComments
+- Langswitcher
+- Lightslider
+- Pagination
+- Problems
+- reCATPCHA Contact
+- Shortcodes
+- SimpleSearch
+- Sitemap
+- Topicmenu (not used)
+
+## License: 
+Dual licensed: 
+- **Code** licensed with **MIT license**. 
+- **Content and graphics** licensed with **Creative Commons Attribution-NonComercial-ShareAlike**.
 
 See [LICENSE](LICENSE)
 

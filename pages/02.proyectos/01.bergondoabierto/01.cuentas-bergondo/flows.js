@@ -117,17 +117,26 @@ var expense_order = [[
     ]];
 
 //Start code:
-var margin = {top: 20, right: 1, bottom: 6, left: 1},
+var margin = {top: 20, right: 20, bottom: 6, left: 1},
     width = 1140 - margin.left - margin.right,
     height = 630 - margin.top - margin.bottom;
 
+// Scale graph for different devices
+var scalefactor;
+    if (jQuery(document).width() >= 1140) {scalefactor = 1}  
+    else    {scalefactor = jQuery(document).width()/1300};
+
 var formatNumber = d3.format(",.2f"),
     format = function(d) { return formatNumber(d) + "€"; },
-    color = d3.scale.category10();
+    color = d3.scale.category10()
 
-var svg = d3.select("#chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom);
+var svg = d3.select("#chart")
+    .append("svg")
+        .attr("width", (width*scalefactor+ margin.left + margin.right))
+        .attr("height", (height*scalefactor)+ margin.top + margin.bottom)
+    .append("svg:g")
+        .attr("transform", "scale("+ scalefactor+")")
+        .attr("class", "main-g"); 
 
 var revTitle = svg.append("text")
     .text("")
