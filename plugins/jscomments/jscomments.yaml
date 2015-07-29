@@ -5,6 +5,7 @@ provider: ""
 providers:
   disqus:
     shortname: ""
+    default_lang: en
 
   intensedebate:
     acct: ""

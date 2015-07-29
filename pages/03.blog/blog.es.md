@@ -17,7 +17,7 @@ content:
     pagination: true
 
 feed:
-    description: A Radian Off Blog
+    description: Cuaderno de aRadianOff
     limit: 10
 
 pagination: true

@@ -60,7 +60,7 @@ class JSCommentsPlugin extends Plugin
         $template_file = 'plugins/jscomments/' . $this->config->get('provider') . '.html.twig';
         $template_vars = $this->config->get('providers.' . $this->config->get('provider'));
 
-        return $this->grav['twig']->twig()->render($template_file, $template_vars);
+        return $this->grav['twig']->processTemplate($template_file, $template_vars);
     }
 
     public function jscommentsCountFunction($shortname = '')

@@ -5,23 +5,6 @@ provider: "disqus"
 providers:
   disqus:
     shortname: "aradianoff"
+    default_lang: es_es
 
-  intensedebate:
-    acct: ""
 
-  facebook:
-    appId: ""
-    lang: "en_US"
-    numposts: 5
-    colorscheme: "light"
-    width: "100%"
-
-  muut:
-    forum: ""
-    channel: "General"
-    show_online: false
-    show_title: false
-    upload: false
-    share: true
-    widget: false
-    lang: "en"

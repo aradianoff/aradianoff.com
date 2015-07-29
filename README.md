@@ -4,8 +4,12 @@
 
 ## ToDo List (List of posible improvements to be made): 
 - Instead of pagination, use infinite scrolling in Blog
-- Plugins that need multilanguage support: Feed, JSComments.
-- Resize visualizations with scaling factor. 
+- Instead of sidebar: use a horizontal mini-sidebar after the blog tittle and let the posts appear after that with a different layout.
+- Fix breadcrumps line-height (reduce it).
+- ~~Plugins that need multilanguage support: JSComments~~.
+- ~~Resize visualizations with scaling factor~~. 
+- Make a CodeCorner section in projects for future coding projects...
+
 
 
 ##Active plugins list: 
