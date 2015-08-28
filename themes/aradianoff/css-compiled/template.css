@@ -771,16 +771,16 @@ ul.pagination {
   padding: 3px; }
   #navbar .simplesearch li {
     float: right;
-    padding: 3px;
-    width: 10%; }
+    padding: 3px; }
+  #navbar .simplesearch .fa {
+    padding: 6px; }
   #navbar .simplesearch input[type="text"] {
-    width: 80%;
     border: 0;
     color: #fff;
     background-color: transparent;
     box-shadow: none;
     font-family: "Ubuntu Condensed", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    margin: 3px;
+    margin: 0;
     padding: 0; }
     #navbar .simplesearch input[type="text"]::-webkit-input-placeholder {
       color: #fff; }

@@ -60,22 +60,24 @@
     margin-left: 1rem !important;
     padding: 3px;
    
-   li {
-    float: right;
-    padding: 3px;
-   	width: 10%;
-   }
-	
+    li {
+        float: right;
+        padding: 3px;
+    }
+    
+    .fa { 
+        padding: 6px;
+    }
+
 	input[type="text"] {
-	    width:  80%;
 		border: 0;
 		color: $white;
 		background-color: transparent;
 		box-shadow: none;
 		font-family:    $font-family-header;
-		margin: 3px;
+		margin: 0;
         padding: 0;
-        
+                
         @include placeholder {
             color: #fff;
         }
