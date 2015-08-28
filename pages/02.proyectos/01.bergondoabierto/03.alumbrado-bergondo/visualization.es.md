@@ -9,7 +9,7 @@ taxonomy:
     category: [visualization]
     project: [Bergondo@bierto]
     tags: [mapas, topojson, D3, datospublicos, visualización, bergondo, alumbrado]
-published: false
+false: published
 ---
 
 Mapa con los puntos de luz (farolas) que conforman el alumbrado público en Bergondo y otros datos relativos al alumbrado público de interés (datos del 2011).

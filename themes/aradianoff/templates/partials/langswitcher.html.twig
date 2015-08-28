@@ -2,9 +2,9 @@
     {% for key, language in langswitcher.languages %}
         <li>
             {% if key == langswitcher.current %}
-                <a href="{{ page.url }}" class="active" alt={{  language.nativeName|capitalize }}><img src={{theme_url}}/images/{{ key }}.png alt={{ key }} /></a> 
+                <a href="{{ page.url }}" class="active" alt="{{  language.nativeName|capitalize }}"><img src={{theme_url}}/images/{{ key }}.png alt="{{ key }}" /></a> 
             {% else %}
-                <a href="{{ url(key~langswitcher.page_route) }}" alt={{  language.nativeName|capitalize }}><img class="non_active" src={{theme_url}}/images/{{ key }}.png alt={{ key }} /></a>
+                <a href="{{ url(key~langswitcher.page_route) }}" alt="{{  language.nativeName|capitalize }}"><img class="non_active" src={{theme_url}}/images/{{ key }}.png alt="{{ key }}" /></a>
             {% endif %}
         </li>
 {% endfor %}   
