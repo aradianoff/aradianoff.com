@@ -4,7 +4,8 @@ icon: user
 slug: about
 menu: QuiénEs
 
-recaptchacontact: true
+recaptchacontact: 
+  recipient: "inesnaya@aradianoff.com"
 
 ---
 
