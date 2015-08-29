@@ -4,7 +4,8 @@ icon: user
 slug: about
 menu: About
 
-recaptchacontact: true
+recaptchacontact: 
+  recipient: "inesnaya@aradianoff.com"
 
 ---
 
