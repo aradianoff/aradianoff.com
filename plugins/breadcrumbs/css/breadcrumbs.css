@@ -1,12 +1,10 @@
 #breadcrumbs {
     height: 3rem;
-    line-height: 1rem;
+    line-height: 3rem;
     padding-left: 3rem;
 }
 #breadcrumbs span {
     display: inline-block;
-    vertical-align: top;
-    max-width: 70%;
     padding: 0 1rem;
 }
 #breadcrumbs span:first-child {
