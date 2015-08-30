@@ -1,7 +1,3 @@
-feed: 
-  description: 'El cuaderno de aRadianOff'
-  lang: es-es
-
 RECAPTCHACONTACT:
     FORM_LEGEND: "Contacta conmigo"
     SUBJECT: "¡Nuevo contacto desde tu sitio GRAV!"
@@ -18,7 +14,7 @@ RECAPTCHACONTACT:
 
       MESSAGE:
         LABEL: "Mensaje"
-        PLACEHOLDER: "Añade tu mensaje"
+        PLACEHOLDER: "Añade tu mensaje personalizado"
 
       ANTISPAM:
         LABEL: "Antispam"

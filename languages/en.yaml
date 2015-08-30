@@ -1,33 +1,30 @@
-feed.description: "aRadianOff's Notebook"
-feed.lang: en-us
-
 RECAPTCHACONTACT:
-    FORM_LEGEND: "Contact me"
-    SUBJECT: "New contact from Grav site!"
-    RECIPIENT: "inesnaya@aradianoff.com"
+  FORM_LEGEND: "Contact me"
+  SUBJECT: "New contact from Grav site!"
+  RECIPIENT: "inesnaya@aradianoff.com"
 
-    FIELDS:
-      NAME:
-        LABEL: "Name"
-        PLACEHOLDER: "Add your name"
+  FIELDS:
+    NAME:
+      LABEL: "Name"
+      PLACEHOLDER: "Add your name"
 
-      EMAIL:
-        LABEL: "Email"
-        PLACEHOLDER: "Add your email"
+    EMAIL:
+      LABEL: "Email"
+      PLACEHOLDER: "Add your email"
 
-      MESSAGE:
-        LABEL: "Message"
-        PLACEHOLDER: "Add your message"
+    MESSAGE:
+      LABEL: "Message"
+      PLACEHOLDER: "Add your custom message"
 
-      ANTISPAM:
-        LABEL: "Antispam"
-        PLACEHOLDER: "Please leave this field empty for Antispam"
+    ANTISPAM:
+      LABEL: "Antispam"
+      PLACEHOLDER: "Please leave this field empty for Antispam"
 
-      SUBMIT:
-        LABEL: "Submit"
+    SUBMIT:
+      LABEL: "Submit"
 
-    MESSAGES:
-      SUCCESS: "Thank You! Your message has been sent."
-      ERROR: "Oops! There was a problem with your submission. Please complete the form and try again."
-      FAIL: "Oops! Something went wrong and we couldn't send your message."
+  MESSAGES:
+    SUCCESS: "Thank You! Your message has been sent."
+    ERROR: "Oops! There was a problem with your submission. Please complete the form and try again."
+    FAIL: "Oops! Something went wrong and we couldn't send your message."
 
